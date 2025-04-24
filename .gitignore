@@ -2,3 +2,6 @@ env
 venv
 experiment
 .env
+test.py
+\__pycache__
+\logs
