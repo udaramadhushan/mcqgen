@@ -3,8 +3,6 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 import os
 
-from src.mcqgenerator.logger import logging
-from src.mcqgenerator.utils import read_file , get_table_data
 
 from langchain.llms import OpenAI
 from langchain.prompts  import PromptTemplate
@@ -21,7 +19,7 @@ llm = ChatOpenAI(
     model_name="gpt-4",
     temperature=0.3 
 )
-
+print(KEY)
 template_1 = """
 Text:{text}
 
