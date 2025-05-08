@@ -27,7 +27,7 @@ with st.form("user_inputs"):
     button = st.form_submit_button("Create MCQs")
 
 
-    if button and uploaded_file is not None and mcq_count and subject and tone:
+    if button and uploaded_file  is not None and mcq_count and subject and tone:
         with st.spinner("loading-----"):
             try:
                 text= read_file(uploaded_file)
